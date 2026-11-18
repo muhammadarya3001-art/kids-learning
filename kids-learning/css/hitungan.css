@@ -1,0 +1,12 @@
+.grid{grid-template-columns:repeat(3,1fr);gap:10px}
+.ncard{padding:0;border:0;background:none}
+.body{display:flex;align-items:center;justify-content:space-between;height:92px;padding:8px;background:var(--bg,#fffaf1);border:2px solid var(--line);border-radius:10px 10px 0 0}
+.num{font-size:26px;font-weight:800;color:var(--num,var(--ink))}
+.ncard .name{border-top:0;border-radius:0 0 8px 8px;background:var(--bar,var(--cyan))}
+.ncard{filter:drop-shadow(0 4px 0 #6b44291f)}
+.ncard:nth-child(6n+1){--bg:#fff0bf;--bar:var(--c1);--num:var(--t4)}
+.ncard:nth-child(6n+2){--bg:#ffe1d0;--bar:var(--c2);--num:var(--t1)}
+.ncard:nth-child(6n+3){--bg:#ffdde5;--bar:var(--c3);--num:var(--t2)}
+.ncard:nth-child(6n+4){--bg:#dff3ea;--bar:var(--c4);--num:var(--t3)}
+.ncard:nth-child(6n+5){--bg:#fff0dc;--bar:var(--c5);--num:var(--t1)}
+.ncard:nth-child(6n+6){--bg:#eef5cf;--bar:var(--c6);--num:var(--t3)}

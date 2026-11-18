@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+:root{--c1:#ffd35c;--c2:#ffb48a;--c3:#ffc2cf;--c4:#bfe8d9;--c5:#ffdcb8;--c6:#dcecaa;--t1:#c2570f;--t2:#b83a5c;--t3:#2f7d5b;--t4:#a87400;--ink:#4a2f1f;--yellow:#ffd35c;--cyan:#bfe8d9;--pink:#ffc9d4;--green:#9ad14b;--line:#6b4429}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{font-family:Poppins,system-ui,sans-serif;color:var(--ink);background:#f1dcc0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+.app{max-width:480px;min-height:100vh;margin:0 auto;padding:14px 16px 32px;background:linear-gradient(#fff3e0,#ffdcae);box-shadow:0 0 30px #0002}
+
+/* warna label */
+.c-yellow{background:var(--yellow)}
+.c-cyan{background:var(--cyan);color:#1f5a47}
+.c-pink{background:var(--pink);color:#a3324f}
+
+/* topbar: tombol kembali + segmen menu */
+.topbar{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.back{width:38px;height:38px;flex:none;display:grid;place-items:center;border-radius:50%;background:var(--c2);border:2px solid var(--line);font-size:20px;font-weight:800}
+.seg{flex:1;display:flex;gap:6px;align-items:center;min-height:38px;padding:5px;border-radius:99px;background:#fffaf1;border:2px solid var(--line)}
+.seg-off{flex:1;height:10px;border-radius:9px;background:#f0d9bb}
+.seg-on{flex:none;padding:5px 12px;border-radius:99px;font-size:11px;font-weight:800;border:1.5px solid var(--line);white-space:nowrap}
+
+.chip{display:table;margin:0 auto 20px;padding:7px 16px;border-radius:10px;font-size:15px;font-weight:700;text-align:center}
+.btn-kuis{display:block;width:max-content;margin:26px auto 0;padding:9px 34px;border-radius:12px;background:var(--green);border:2.5px solid #5f8a24;color:#30500f;font-weight:800;box-shadow:0 4px 0 #5f8a24}
+.btn-kuis:active{transform:translateY(3px);box-shadow:0 1px 0 #5f8a24}
+.grid{display:grid;gap:14px}
+.name{display:block;padding:4px 6px;border:2px solid var(--line);font-size:11px;font-weight:700;text-align:center}
+
+/* slot gambar: gambar dimuat dari assets, kalau belum ada tampil emoji */
+.img-slot{position:absolute;inset:0;background:#fdecd3}
+.img-slot img{width:100%;height:100%;object-fit:cover;display:block}
+.img-slot b{display:none;position:absolute;inset:0;align-items:center;justify-content:center;font-size:52px}
+.img-slot.empty b{display:flex}
+
+/* apel untuk menghitung */
+.apples{display:grid;grid-auto-flow:column;grid-template-rows:repeat(var(--r),1fr);gap:1px 3px}
+.apples i{font-style:normal;line-height:1}
+
+.bounce{animation:pop .45s}
+@keyframes pop{40%{transform:scale(1.07)}}
+[hidden]{display:none !important}

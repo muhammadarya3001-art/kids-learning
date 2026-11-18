@@ -1,0 +1,6 @@
+.info{font-size:13px;margin-bottom:14px;text-align:center}
+.row{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+.play{flex:1;padding:10px;border-radius:12px;border:2px solid var(--line);background:var(--cyan);font-weight:700}
+.row select{flex:1;padding:10px;border-radius:12px;border:2px solid var(--line);background:#fffaf1;font-weight:700}
+.row select.dobel{background:#ffc4b0}
+.warn{min-height:20px;text-align:center;color:#b5442c;font-weight:700;font-size:13px}

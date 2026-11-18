@@ -1,0 +1,7 @@
+.grid{grid-template-columns:1fr 1fr}
+.hcard{padding:0;border:0;background:none}
+.photo{display:block;position:relative;aspect-ratio:1/.8;overflow:hidden;border:2px solid var(--line);border-radius:12px 12px 0 0}
+.hcard .name{border-top:0;border-radius:0 0 10px 10px;background:var(--bar,var(--yellow));color:var(--ink)}
+.hcard{filter:drop-shadow(0 4px 0 #6b44291f)}
+.hcard:nth-child(6n+1){--bar:var(--c1)}.hcard:nth-child(6n+2){--bar:var(--c2)}.hcard:nth-child(6n+3){--bar:var(--c3)}
+.hcard:nth-child(6n+4){--bar:var(--c4)}.hcard:nth-child(6n+5){--bar:var(--c5)}.hcard:nth-child(6n+6){--bar:var(--c6)}

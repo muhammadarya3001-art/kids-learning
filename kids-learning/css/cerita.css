@@ -1,0 +1,6 @@
+/* Bagian "Cerita Seru" di halaman materi: 4 panel komik tersusun ke bawah */
+.cerita{margin-top:26px;padding:14px;border-radius:18px;background:#fff3dc;border:2px solid var(--line);box-shadow:0 5px 0 #6b44292b}
+.cerita-judul{text-align:center;font-size:17px;font-weight:800;color:var(--t1)}
+.cerita-sub{text-align:center;font-size:12px;font-weight:600;margin:2px 0 12px}
+.cerita img{display:block;width:100%;height:auto;margin-bottom:10px;border-radius:10px;border:2px solid var(--line);background:#fffaf1}
+.cerita img:last-child{margin-bottom:0}
